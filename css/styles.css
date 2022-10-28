@@ -22,7 +22,49 @@
   
   /*body css*/
   
-
+body {
+    font-family: Roboto, sans-serif;
+  }
+  
+li {
+    list-style-type: none;
+  }
+  
+a {
+    text-decoration: none;
+  }
+  
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+  }
+  
+img {
+    display: block;
+  }
+  
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
   
 header {
     border-bottom: 1px solid #ececec;
@@ -58,12 +100,16 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
+
+    padding: 40px 40px;
+
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.6, 0.14, 0.21, 1.43);
 }
@@ -87,40 +133,61 @@ header {
     padding: 0;
     background-color: var(--white);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
+    border-radius: 50%;   
 }
+
+.button-close .icon {
+  width: 11px;
+  height: 11px;
+  transition-duration: 250ms;
+  transition-timing-function: var(--animating-timing);
+}
+
+.button-close:hover .icon,
+.button-close:focus .icon {
+  fill: var(--link-color);
+  cursor: pointer;
   
+}
+
+/*.icon { 
+  display: inline-block; 
+  width: 1em; 
+  height: 1em; 
+  stroke-width: 0; 
+  stroke: currentColor; 
+  fill: currentColor; 
+}
+*/
+
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
   
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .modal-text {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2px;
-    text-align: center;
-    letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.03em;
   
-    color: var(--main-font-color);
+  color: var(--main-font-color);
 }
   
 .submit {
-    text-align: center;
-}
+  text-align: center;
 
-form {
-  margin: 40px 40px;
 }
 
 .form-field {
@@ -146,7 +213,6 @@ form {
 
 .text-form {
   margin-bottom: 4px;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.2;
@@ -163,7 +229,7 @@ form {
   box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
 
   transition-duration: 250ms;
   transition-timing-function: var(--animating-timing);
@@ -191,14 +257,19 @@ form {
   margin-left: 8px;
   width: 16px;
   height: 15px;
-  border-radius: 2px;
+  border-radius: 1px;
   box-shadow: 0 0 0 2px var(--main-font-color);
 
   transition-duration: 250ms;
   transition-timing-function: var(--animating-timing);
 }
-
-.input-checkbox:checked + .check-box::after {
+.input-checkbox:focus-visible > .checkbox-icon {
+  --color3: var(--link-color);
+}
+.input-checkbox:focus-visible {
+  outline-color: var(--link-color);
+}
+/*.input-checkbox:checked + .check-box::after {
   box-shadow: 0 0 0 2px var(--link-color);
   background-color: var(--link-color);
 
@@ -206,14 +277,14 @@ form {
 
   transition-duration: 250ms;
   transition-timing-function: var(--animating-timing);
-}
+}*/
 
 .checkbox-text {
   margin-left: 7px;
   margin-right: 4px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7x;
+  line-height: 24px;
 
   letter-spacing: 0.03em;
 
@@ -223,7 +294,7 @@ form {
 .checkbox-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.7x;
+  line-height: 1.7;
 
   letter-spacing: 0.03em;
 
@@ -231,10 +302,18 @@ form {
   text-decoration: underline;
 }
 
+.form-taxt-checkbox {
+  position: relative;
+  color: var(--secondary-font-color);
+  margin-left: 7px;
+}
+
 textarea {
+  padding: 12px;
   height: 120px;
   display: flex;
   flex-direction: column;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -250,27 +329,65 @@ textarea {
 }
 
 textarea::placeholder {
-  padding: 12px 16px;
   max-width: 448px;
   max-height: 120px;
   resize: none;
   color: rgba(117, 117, 117, 0.5);
 }
 
+.label-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.checkbox-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-133%, -51%);
+  --color1: var(--white);
+  --color2: var(--white);
+  --color3: var(--logo-color);
+}
+
+.checkbox-icon:focus {
+  --color1: var(--white);
+  --color2: var(--white);
+  --color3: var(--logo-color);
+}
+
+.input-checkbox:checked ~ .form-taxt-checkbox > .checkbox-icon {
+  --color1: var(--link-color);
+  --color2: var(--white);
+  --color3: var(--link-color);
+}
+
+.input-checkbox:focus ~ .form-taxt-checkbox > .checkbox-icon {
+  --color3: var(--link-color);
+}
+
 .modal-button {
+  position: relative;
   background: var(--link-color);
   color: var(--main-light-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
+  margin-top: 0px;
+  bottom: 2px;
 
   border-radius: 4px;
   padding: 10px 52px;
-  margin-top: 40px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.5em;
   text-align: center;
   letter-spacing: 0.06em;
+
+  width: 200px;
+  height: 50px;
 }
 
   /* header css*/
@@ -437,6 +554,7 @@ textarea::placeholder {
     max-width: 696px;
     height: 120px;
   }
+
 .hero-button {
     background: var(--link-color);
     color: var(--main-light-color);
