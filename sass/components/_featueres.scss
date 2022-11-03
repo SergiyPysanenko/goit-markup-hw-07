@@ -1,0 +1,95 @@
+.featueres-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+  
+.featueres {
+    display: flex;
+    padding-inline-start: 0px;
+    margin: 0px;
+  
+    .antenna::before {
+      background-image: url(/images/antenna.svg);
+    }
+  
+    .clock::before {
+      background-image: url(/images/clock.svg);
+    }
+  
+    .diagram::before {
+      background-image: url(/images/diagram.svg);
+    }
+  
+    .astronaut::before {
+      background-image: url(/images/astronaut.svg);
+    }
+}
+  
+.featueres .item + .item {
+    margin-left: 30px;
+}
+  
+.quality {
+    width: 270px;
+  
+    &::before {
+      display: block;
+      content: "";
+      height: 120px;
+      background-color: #f5f4fa;
+      background-size: 70px 70px;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 30px;
+    }
+}
+  
+.quality h3 {
+    margin-bottom: 10px;
+}
+  
+.qualitys:not(:last-child) {
+    margin-right: 30px;
+}
+  
+.featueres .item {
+    display: flex;
+    width: 270px;
+    margin-right: 0px;
+    padding-inline-start: 0px;
+}
+  
+.featueres-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: $third-font;
+    font-weight: $bold-font-weight;
+    font-size: $primary-font-size;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-text-color;
+}
+  
+.featueres-link {
+    font-family: $primary-font;
+    font-weight: $primary-font-weight;
+    font-size: $primary-font-size;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

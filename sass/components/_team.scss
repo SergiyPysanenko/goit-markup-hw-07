@@ -1,0 +1,95 @@
+.team-bg {
+    background: $portfolio-bg-color;
+}
+  
+.team {
+    padding-top: 0;
+    margin-bottom: 50px;
+    font-family: $third-font;
+    font-weight: $bold-font-weight;
+    font-size: $fourth-font-size;
+    line-height: 42px;
+  
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $primary-text-color;
+}
+  
+.all-team {
+    display: flex;
+    text-align: center;
+}
+  
+.all-team .item + .item {
+    margin-left: 30px;
+}
+  
+.all-team .item {
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+}
+  
+.team-card {
+    padding: 30px 30px;
+}
+  
+.team-title {
+    margin-bottom: 10px;
+    font-family: $second-font;
+    font-weight: $medium-font-weight;
+    font-size: $second-font-size;
+    line-height: 19px;
+  
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $primary-text-color;
+}
+  
+.team-link {
+    font-family: $primary-font;
+    font-weight: $primary-font-weight;
+    font-size: $second-font-size;
+    line-height: 19px;
+  
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $title-text-color;
+}
+  
+.networks {
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0px;
+    margin-top: 16px;
+}
+  
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $icon-color;
+    border-radius: 50%;
+  
+    transition: background-color 250ms $animation-timing,
+      color 250ms $animation-timing;
+  
+    &:hover,
+    &:focus {
+      background-color: $link-color;
+      color: $white;
+      outline: none;
+    }
+}
+  
+.networks .icon {
+    fill: $icon-color;
+    fill: currentColor;
+}

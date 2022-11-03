@@ -1,0 +1,57 @@
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-color: #c4c4c4;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+    url("/images/overlay.jpg");
+}
+  
+.hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-family: $fourth-font;
+    font-weight: $hero-font-weight;
+    font-size: $third-font-size;
+    line-height: 60px;
+  
+    text-align: center;
+  
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $hero-color;
+}
+  
+.hero-button {
+    background: $link-color;
+    color: $hero-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+  
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-family: $third-font;
+    font-weight: $bold-font-weight;
+    font-size: $second-font-size;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.contacts {
+    font-family: $second-font;
+    font-weight: $medium-font-weight;
+    font-size: $primary-font-size;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
