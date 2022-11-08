@@ -334,73 +334,78 @@
         </section>
     </main>
     <!--footer with logo, address, contacts-->
+    <footer class="footer">
+        <div class="container container-foot">
+            <div class="foot">
 
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-bg">
-                <a href="./index.html" class="webstudio-button">Web<span class="span-studio-button">Studio</span></a>
-                <address class="adress-list">
-                    <ul class="list">
-                        <li><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" class="footer-list-item" target="_blank"
-                                rel="noopener noreferrer nofollow">
-                                м. Київ, пр-т Лесі Українки, 26</a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@devstudio.com" class="footer-list">info@devstudio.com</a>
-                        </li>
-                        <li>
-                            <a href="tel:+380961111111" class="footer-list">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
+                <a class="footer__logo link" href="./index.html" lang="en"><span
+                        class="logo__accent">Web</span>Studio</a>
+
+                <address class="container-address">
+                    <a class="link address-link" href="https://goo.gl/maps/qexC5noHdbvhc4Kc7" target="_blank"
+                        rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
                 </address>
+
+                <ul class="foot-contacts list">
+                    <li>
+                        <a class="foot-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="foot-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
             </div>
-            <div class="container-join-us">
-                <p class="join-us">приєднуйтесь</p>
-                <ul class="footer-networks">
-                    <li class="social-link">
-                        <a href="#" class="footer-social-links">
-                            <svg width="20" height="20" class="social-svg">
-                                <use xLink:href="./images/sprite.svg#icon-instagram"></use>
+
+            <div class="add">
+                <h3 class="add__title">приєднуйтесь</h3>
+                <!-- список соц мереж -->
+                <ul class="soc list">
+                    <li class="soc__item">
+                        <a class="soc__link" href="#">
+                            <svg class="" with="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-link">
-                        <a href="#" class="footer-social-links">
-                            <svg width="20" height="20" class="social-svg">
-                                <use xLink:href="./images/sprite.svg#icon-twitter"></use>
+                    <li class="soc__item">
+                        <a class="soc__link" href="#">
+                            <svg class="" with="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-link">
-                        <a href="#" class="footer-social-links">
-                            <svg width="20" height="20" class="social-svg">
-                                <use xLink:href="./images/sprite.svg#icon-facebook"></use>
+                    <li class="soc__item">
+                        <a class="soc__link" href="#">
+                            <svg class="" with="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-link">
-                        <a href="#" class="footer-social-links">
-                            <svg width="20" height="20" class="social-svg">
-                                <use xLink:href="./images/sprite.svg#icon-linkedin"></use>
+                    <li class="soc__item">
+                        <a class="soc__link" href="#">
+                            <svg class="" with="20" height="20">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer-subscribe">
-                <strong class="footer-discription">підпишіться на розсилку</strong>
-                <form class="speaker-form">
-                    <input type="email" name="email" placeholder="E-mail" id="email">
-                    <button class="email-button" type="submit">
-                        <span>Підписатися</span>
-                        <svg width="24" height="24">
-                            <use xLink:href="./images/icon-send.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
+
+            <div class="subscribe">
+                <h3 class="subscribe__title">підпишіться на розсилку</h3>
+                <div class="subscribe__container">
+                    <input class="subscribe__inp" type="email" name="mail" id="mail" placeholder="E-mail" />
+                    <button class="subscribe__button" type="submit"> Підписатися</button>
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                </div>
             </div>
         </div>
     </footer>
+
+
+    <!-- modal window-->>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button-close" data-modal-close>
