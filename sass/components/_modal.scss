@@ -1,0 +1,282 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    opacity: 1;
+    transition: opacity 250ms $animation-timing;
+}
+  
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    background: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $animation-timing;
+}
+  
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+  
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+}
+  
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    width: 30px;
+    height: 30px;
+  
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  
+    &:hover .icon,
+    &:focus .icon {
+      fill: $link-color;
+    }
+}
+  
+.button-close .icon {
+    width: 11px;
+    height: 11px;
+}
+  
+form {
+    margin: 40px 40px;
+}
+  
+.form-field {
+    margin-bottom: 20px;
+}
+  
+.text-form {
+    margin-bottom: 4px;
+    font-family: $second-font;
+    font-weight: $medium-font-weight;
+    font-size: $seventh-font-size;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  
+    color: $title-text-color;
+}
+  
+.label-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+    & textarea:focus {
+      border-color: $link-color;
+      outline: none;
+      cursor: pointer;
+      transition-duration: 250ms;
+      transition-timing-function: $animation-timing;
+    }
+}
+  
+.label-form:not(:last-child) {
+    margin-bottom: 10px;
+}
+  
+.label-form svg {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    fill: $primary-text-color;
+}
+  
+.input-form {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: $second-font-size;
+  
+    transition-duration: 250ms;
+    transition-timing-function: $animation-timing;
+  
+    &:focus {
+      border-color: $link-color;
+      outline: none;
+      cursor: pointer;
+      transition-duration: 250ms;
+      transition-timing-function: $animation-timing;
+    }
+  
+    &:focus ~ svg {
+      fill: $link-color;
+      cursor: pointer;
+      transition-duration: 250ms;
+      transition-timing-function: $animation-timing;
+    }
+}
+  
+.modal-text {
+    margin-bottom: 30px;
+    font-family: $third-font;
+    font-weight: $bold-font-weight;
+    font-size: 20px;
+    line-height: 1.2px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $primary-text-color;
+}
+  
+.submit {
+    text-align: center;
+}
+  
+.modal-button {
+    background: $link-color;
+    color: $hero-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+  
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-family: $third-font;
+    font-weight: $bold-font-weight;
+    font-size: $second-font-size;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+  
+.underline {
+    text-decoration: underline;
+    color: $link-color;
+}
+  
+textarea {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+}
+  
+textarea::placeholder {
+    padding: 12px 16px;
+    max-width: 448px;
+    max-height: 120px;
+    resize: none;
+  
+    color: rgba(117, 117, 117, 0.5);
+}
+  
+.checkbox {
+    align-self: center;
+    margin-bottom: 30px;
+  
+    .check-box::after {
+      display: inline-block;
+      vertical-align: middle;
+      content: "";
+      margin-left: 8px;
+      width: 16px;
+      height: 15px;
+      border-radius: 2px;
+      box-shadow: 0 0 0 2px $primary-text-color;
+  
+      transition-duration: 250ms;
+      transition-timing-function: $animation-timing;
+    }
+}
+  
+.lable-checkbox {
+    display: flex;
+    align-items: center;
+}
+  
+.input-checkbox {
+    display: flex;
+    appearance: none;
+    cursor: pointer;
+}
+  
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+  
+
+.check-box::after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    margin-left: 8px;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px $animation-timing;
+  
+    transition-duration: 250ms;
+    transition-timing-function: $animation-timing;
+}
+  
+.input-checkbox:checked + .check-box::after {
+    box-shadow: 0 0 0 2px $link-color;
+    background-color: $link-color;
+  
+    /*background-image: url("/images/icon-check.svg");*/
+  
+    transition-duration: 250ms;
+    transition-timing-function: $animation-timing;
+}
+  
+.checkbox-text {
+    margin-left: 7px;
+    margin-right: 4px;
+    font-family: $second-font;
+    font-weight: $medium-font-weight;
+    font-size: $primary-font-size;
+    line-height: 1.7x;
+  
+    letter-spacing: 0.03em;
+  
+    color: $primary-text-color;
+}
+  
+.checkbox-link {
+    font-family: $second-font;
+    font-weight: $medium-font-weight;
+    font-size: $primary-font-size;
+    line-height: 1.7x;
+  
+    letter-spacing: 0.03em;
+  
+    color: $link-color;
+    text-decoration: underline;
+}
