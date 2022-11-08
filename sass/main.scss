@@ -1,5 +1,6 @@
 @import "../sass/utils/variables";
 @import "../sass/base/base";
+@import "../sass/base/normalize";
 
 @import "../sass/components/header";
 @import "../sass/components/hero";
@@ -8,3 +9,4 @@
 @import"../sass/components/team";
 @import "../sass/components/clients";
 @import "../sass/components/footer";
+@import "../sass/components/portfolio-filter-btn";
