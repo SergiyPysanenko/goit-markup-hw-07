@@ -199,8 +199,8 @@ textarea::placeholder {
       vertical-align: middle;
       content: "";
       margin-left: 8px;
-      width: 16px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       border-radius: 2px;
       box-shadow: 0 0 0 2px $primary-text-color;
   
@@ -250,7 +250,7 @@ textarea::placeholder {
     box-shadow: 0 0 0 2px $link-color;
     background-color: $link-color;
   
-    /*background-image: url("/images/icon-check.svg");*/
+    background-image: url("/images/icon-check.svg");
   
     transition-duration: 250ms;
     transition-timing-function: $animation-timing;
@@ -262,7 +262,7 @@ textarea::placeholder {
     font-family: $second-font;
     font-weight: $medium-font-weight;
     font-size: $primary-font-size;
-    line-height: 1.7x;
+    line-height: 1.2;
   
     letter-spacing: 0.03em;
   

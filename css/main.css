@@ -1025,8 +1025,8 @@ textarea::placeholder {
   vertical-align: middle;
   content: "";
   margin-left: 8px;
-  width: 16px;
-  height: 15px;
+  width: 14px;
+  height: 14px;
   border-radius: 2px;
   -webkit-box-shadow: 0 0 0 2px #212121;
           box-shadow: 0 0 0 2px #212121;
@@ -1086,7 +1086,7 @@ textarea::placeholder {
   -webkit-box-shadow: 0 0 0 2px #2196f3;
           box-shadow: 0 0 0 2px #2196f3;
   background-color: #2196f3;
-  /*background-image: url("/images/icon-check.svg");*/
+  background-image: url("/images/icon-check.svg");
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1099,7 +1099,7 @@ textarea::placeholder {
   font-family: "Roboto500";
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.7x;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #212121;
 }
