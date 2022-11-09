@@ -259,9 +259,10 @@ textarea::placeholder {
 .checkbox-text {
     margin-left: 7px;
     margin-right: 4px;
-    font-family: $second-font;
-    font-weight: $medium-font-weight;
+    font-family: $main-font;
+    font-weight: $primary-font-weight;
     font-size: $primary-font-size;
+
     line-height: 1.2;
   
     letter-spacing: 0.03em;
@@ -270,10 +271,10 @@ textarea::placeholder {
 }
   
 .checkbox-link {
-    font-family: $second-font;
-    font-weight: $medium-font-weight;
+    font-family: $main-font;
+    font-weight: $primary-font-weight;
     font-size: $primary-font-size;
-    line-height: 1.7x;
+    line-height: 1.7;
   
     letter-spacing: 0.03em;
   

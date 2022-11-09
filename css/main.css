@@ -754,6 +754,15 @@ section {
   background-image: url(/images/icon-send.svg);
 }
 
+/*.footer-submit__btn-icon {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+    right: 40px;
+
+}*/
 .portfolio__filter-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -1221,8 +1230,8 @@ textarea::placeholder {
 .checkbox-text {
   margin-left: 7px;
   margin-right: 4px;
-  font-family: "Roboto500";
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -1230,10 +1239,10 @@ textarea::placeholder {
 }
 
 .checkbox-link {
-  font-family: "Roboto500";
-  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7x;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: underline;
