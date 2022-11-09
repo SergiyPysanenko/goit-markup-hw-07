@@ -1,0 +1,23 @@
+.portfolio__filter-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+.portfolio__filter-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  
+.portfolio__projects-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
